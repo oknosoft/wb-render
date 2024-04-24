@@ -1,0 +1,59 @@
+{
+  "name": "wb-render",
+  "description": "Minimalistic wb-core application",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Evgeniy Malyarov <info@oknosoft.ru> (http://www.oknosoft.ru)",
+  "license": "MIT",
+  "engines": {
+    "node": "^20.11",
+    "yarn": "^1.22"
+  },
+  "packageManager": "yarn@1.22.21",
+  "dependencies": {
+    "pouchdb-adapter-http": "^8.0",
+    "pouchdb-adapter-indexeddb": "^8.0",
+    "pouchdb-core": "^8.0",
+    "pouchdb-find": "^8.0",
+    "pouchdb-mapreduce": "^8.0",
+    "pouchdb-replication": "^8.0",
+    "pouchdb-utils": "^8.0",
+    "wb-core": "github:oknosoft/windowbuilder-core#6bf78b96e6be3ee9ff305ffecd1fd00570a5d3ac"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24",
+    "@babel/preset-env": "^7.24",
+    "@babel/preset-react": "^7.24",
+    "babel-loader": "^9.1",
+    "css-loader": "^6.10",
+    "md5-file": "^5.0",
+    "raw-loader": "^4.0",
+    "style-loader": "^3.3",
+    "webpack": "^5.91",
+    "webpack-cli": "^5.1",
+    "webpack-dev-server": "^5.0"
+  },
+  "peerDependecies": {},
+  "scripts": {
+    "dev": "webpack serve -c config/webpack.dev.js",
+    "prod": "webpack -c config/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oknosoft/helloworld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oknosoft/metadata.js/issues"
+  },
+  "homepage": "https://oknosoft.ru/metadata",
+  "keywords": [
+    "metadata",
+    "browser data engine",
+    "spa offline",
+    "offline framework",
+    "offline first",
+    "replication",
+    "метадата",
+    "метадата 1с"
+  ]
+}
